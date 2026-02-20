@@ -29,7 +29,7 @@ namespace QuestionnaireProject {
         }
 
     private:
-        // Îñíîâí³ åëåìåíòè ôîðìè
+        // Основні елементи форми
         System::Windows::Forms::Label^ label1;
         System::Windows::Forms::Label^ label2;
         System::Windows::Forms::Label^ label3;
@@ -58,48 +58,48 @@ namespace QuestionnaireProject {
 
         System::ComponentModel::Container^ components;
 
-        // Ìåòîä äëÿ ³í³ö³àë³çàö³¿ êîìáîáîêñ³â
+        // Метод для ініціалізації комбобоксів
         void InitializeComboBoxes()
         {
-            // Êðà¿íè
-            comboBox1->Items->Add("Óêðà¿íà");
-            comboBox1->Items->Add("Ïîëüùà");
-            comboBox1->Items->Add("Í³ìå÷÷èíà");
-            comboBox1->Items->Add("Ôðàíö³ÿ");
-            comboBox1->Items->Add("Âåëèêîáðèòàí³ÿ");
-            comboBox1->Items->Add("ÑØÀ");
-            comboBox1->Items->Add("Êàíàäà");
+            // Країни
+            comboBox1->Items->Add("Україна");
+            comboBox1->Items->Add("Польща");
+            comboBox1->Items->Add("Нідерланди");
+            comboBox1->Items->Add("Швеція");
+            comboBox1->Items->Add("Великобританія");
+            comboBox1->Items->Add("Литва");
+            comboBox1->Items->Add("Фінляндія");
 
-            // Êóðñè
-            comboBox2->Items->Add("1 êóðñ");
-            comboBox2->Items->Add("2 êóðñ");
-            comboBox2->Items->Add("3 êóðñ");
-            comboBox2->Items->Add("4 êóðñ");
+            // Курси
+            comboBox2->Items->Add("1 курс");
+            comboBox2->Items->Add("2 курс");
+            comboBox2->Items->Add("3 курс");
+            comboBox2->Items->Add("4 курс");
 
-            // Ãðóïè
-            comboBox3->Items->Add("Ì");
-            comboBox3->Items->Add("ÑÎ²");
-            comboBox3->Items->Add("ÑÎÌ");
-            comboBox3->Items->Add("ÑÎÔÀ");
+            // Групи
+            comboBox3->Items->Add("М");
+            comboBox3->Items->Add("СОІ");
+            comboBox3->Items->Add("СОМ");
+            comboBox3->Items->Add("СОФА");
 
-            // Ñïåö³àëüíîñò³
-            comboBox4->Items->Add("Êîìï'þòåðíà ìàòåìàòèêà");
-            comboBox4->Items->Add("Ñåðåäíÿ îñâ³òà Ìàòåìàòèêà");
-            comboBox4->Items->Add("Ñåðåäíÿ îñâ³òà ²íôîðìàòèêà");
-            comboBox4->Items->Add("Ñåðåäíÿ îñâ³òà Ô³çèêà ³ Àñòðîíîì³ÿ");
+            // Спеціальності
+            comboBox4->Items->Add("Комп'ютерна математика");
+            comboBox4->Items->Add("Середня освіта Математика");
+            comboBox4->Items->Add("Середня освіта Інформатика");
+            comboBox4->Items->Add("Середня освіта Фізика і Астрономія");
 
-            // Ïðåäìåòè ó checkedListBox
-            checkedListBox1->Items->Add("Àíàë³òè÷íà Ãåîìåòð³ÿ");
-            checkedListBox1->Items->Add("²íôîðìàòèêà");
-            checkedListBox1->Items->Add("Àíàë³ç Äàíèõ");
-            checkedListBox1->Items->Add("Àíãë³éñüêà ìîâà äëÿ ïðîô ñï³ëêóâàííÿ");
-            checkedListBox1->Items->Add("Ìàòåìàòè÷íèé Àíàë³ç");
-            checkedListBox1->Items->Add("Åëåìåíòàðíà Ìàòåìàòèêà");
-            checkedListBox1->Items->Add("Ãåéìèô³êàö³ÿ îñâ³òè");
-            checkedListBox1->Items->Add("Óêðà¿íñüêà Ìîâà");
-            checkedListBox1->Items->Add("²ñòîð³ÿ Ìàòåìàòèêè");
-            checkedListBox1->Items->Add("Øòó÷íèé ³íòåëåêò");
-            checkedListBox1->Items->Add("Äèñêðåòíà ìàòåìàòèêà");
+            // Предмети у checkedListBox
+            checkedListBox1->Items->Add("Аналітична Геометрія");
+            checkedListBox1->Items->Add("Інформатика");
+            checkedListBox1->Items->Add("Аналіз Даних");
+            checkedListBox1->Items->Add("Англійська мова для проф спілкування");
+            checkedListBox1->Items->Add("Математичний Аналіз");
+            checkedListBox1->Items->Add("Елементарна Математика");
+            checkedListBox1->Items->Add("Геймифікація освіти");
+            checkedListBox1->Items->Add("Українська Мова");
+            checkedListBox1->Items->Add("Історія Математики");
+            checkedListBox1->Items->Add("Штучний інтелект");
+            checkedListBox1->Items->Add("Дискретна математика");
         }
 
 #pragma region Windows Form Designer generated code
@@ -142,7 +142,7 @@ namespace QuestionnaireProject {
             this->label1->Name = L"label1";
             this->label1->Size = System::Drawing::Size(83, 17);
             this->label1->TabIndex = 0;
-            this->label1->Text = L"Ïð³çâèùå:";
+            this->label1->Text = L"Прізвище:";
             // 
             // label2
             // 
@@ -153,7 +153,7 @@ namespace QuestionnaireProject {
             this->label2->Name = L"label2";
             this->label2->Size = System::Drawing::Size(40, 17);
             this->label2->TabIndex = 1;
-            this->label2->Text = L"²ì\'ÿ:";
+            this->label2->Text = L"Ім\'я:";
             // 
             // label3
             // 
@@ -164,7 +164,7 @@ namespace QuestionnaireProject {
             this->label3->Name = L"label3";
             this->label3->Size = System::Drawing::Size(147, 17);
             this->label3->TabIndex = 2;
-            this->label3->Text = L"Äàòà íàðîäæåííÿ:";
+            this->label3->Text = L"Дата народження:";
             // 
             // label4
             // 
@@ -175,7 +175,7 @@ namespace QuestionnaireProject {
             this->label4->Name = L"label4";
             this->label4->Size = System::Drawing::Size(63, 17);
             this->label4->TabIndex = 3;
-            this->label4->Text = L"Êðà¿íà:";
+            this->label4->Text = L"Країна:";
             // 
             // label5
             // 
@@ -186,7 +186,7 @@ namespace QuestionnaireProject {
             this->label5->Name = L"label5";
             this->label5->Size = System::Drawing::Size(117, 17);
             this->label5->TabIndex = 4;
-            this->label5->Text = L"Ñïåö³àëüí³ñòü:";
+            this->label5->Text = L"Спеціальність:";
             // 
             // textBox1
             // 
@@ -257,7 +257,7 @@ namespace QuestionnaireProject {
             this->linkLabel1->Size = System::Drawing::Size(129, 17);
             this->linkLabel1->TabIndex = 12;
             this->linkLabel1->TabStop = true;
-            this->linkLabel1->Text = L"Ñàéò óí³âåðñèòåòó";
+            this->linkLabel1->Text = L"Сайт університету";
             this->linkLabel1->LinkClicked += gcnew System::Windows::Forms::LinkLabelLinkClickedEventHandler(this, &MyForm::linkLabel1_LinkClicked);
             // 
             // pictureBox1
@@ -287,7 +287,7 @@ namespace QuestionnaireProject {
             this->textBox3->Name = L"textBox3";
             this->textBox3->Size = System::Drawing::Size(320, 80);
             this->textBox3->TabIndex = 15;
-            this->textBox3->Text = L"Òóò áóäå ³íôîðìàö³ÿ ïðî ïðåäìåòè, ùî âèâ÷àþòüñÿ...";
+            this->textBox3->Text = L"Тут буде інформація про предмети, що вивчаються...";
             // 
             // textBox4
             // 
@@ -296,7 +296,7 @@ namespace QuestionnaireProject {
             this->textBox4->Name = L"textBox4";
             this->textBox4->Size = System::Drawing::Size(320, 80);
             this->textBox4->TabIndex = 16;
-            this->textBox4->Text = L"Òóò áóäå ³íôîðìàö³ÿ ïðî ìåíå...";
+            this->textBox4->Text = L"Тут буде інформація про мене...";
             // 
             // button1
             // 
@@ -306,7 +306,7 @@ namespace QuestionnaireProject {
             this->button1->Name = L"button1";
             this->button1->Size = System::Drawing::Size(120, 35);
             this->button1->TabIndex = 17;
-            this->button1->Text = L"ß âèâ÷àþ";
+            this->button1->Text = L"Я вивчаю";
             this->button1->UseVisualStyleBackColor = true;
             this->button1->Click += gcnew System::EventHandler(this, &MyForm::button1_Click);
             // 
@@ -318,7 +318,7 @@ namespace QuestionnaireProject {
             this->button2->Name = L"button2";
             this->button2->Size = System::Drawing::Size(120, 35);
             this->button2->TabIndex = 18;
-            this->button2->Text = L"Ïðî ìåíå";
+            this->button2->Text = L"Про мене";
             this->button2->UseVisualStyleBackColor = true;
             this->button2->Click += gcnew System::EventHandler(this, &MyForm::button2_Click);
             // 
@@ -348,7 +348,7 @@ namespace QuestionnaireProject {
             this->labelCourse->Name = L"labelCourse";
             this->labelCourse->Size = System::Drawing::Size(48, 17);
             this->labelCourse->TabIndex = 22;
-            this->labelCourse->Text = L"Êóðñ:";
+            this->labelCourse->Text = L"Курс:";
             // 
             // labelGroup
             // 
@@ -359,7 +359,7 @@ namespace QuestionnaireProject {
             this->labelGroup->Name = L"labelGroup";
             this->labelGroup->Size = System::Drawing::Size(57, 17);
             this->labelGroup->TabIndex = 21;
-            this->labelGroup->Text = L"Ãðóïà:";
+            this->labelGroup->Text = L"Група:";
             // 
             // MyForm
             // 
@@ -390,7 +390,7 @@ namespace QuestionnaireProject {
             this->Controls->Add(this->labelGroup);
             this->Controls->Add(this->labelCourse);
             this->Name = L"MyForm";
-            this->Text = L"Àíêåòà ñòóäåíòà";
+            this->Text = L"Анкета студента";
             (cli::safe_cast<System::ComponentModel::ISupportInitialize^>(this->pictureBox1))->EndInit();
             (cli::safe_cast<System::ComponentModel::ISupportInitialize^>(this->pictureBox2))->EndInit();
             this->ResumeLayout(false);
@@ -400,36 +400,36 @@ namespace QuestionnaireProject {
 #pragma endregion
 
     private:
-        // Îáðîáíèê ïîä³¿ äëÿ linkLabel1
+        // Обробник події для linkLabel1
         System::Void linkLabel1_LinkClicked(System::Object^ sender, System::Windows::Forms::LinkLabelLinkClickedEventArgs^ e) {
             try {
-                // Â³äêðèâàºìî ñàéò óí³âåðñèòåòó â áðàóçåð³
+                // Відкриваємо сайт університету в браузері
                 Process::Start("https://vspu.edu.ua");
             }
             catch (Exception^ ex) {
-                MessageBox::Show("Íå âäàëîñÿ â³äêðèòè ïîñèëàííÿ: " + ex->Message, "Ïîìèëêà");
+                MessageBox::Show("Не вдалося відкрити посилання: " + ex->Message, "Помилка");
             }
         }
 
-        // Îáðîáíèê ïîä³¿ äëÿ êíîïêè "ß âèâ÷àþ"
+        // Обробник події для кнопки "Я вивчаю"
         System::Void button1_Click(System::Object^ sender, System::EventArgs^ e) {
-            String^ subjects = "ß âèâ÷àþ íàñòóïí³ ïðåäìåòè:\r\n";
+            String^ subjects = "Я вивчаю наступні предмети:\r\n";
             bool hasSelected = false;
 
             for (int i = 0; i < checkedListBox1->Items->Count; i++) {
                 if (checkedListBox1->GetItemChecked(i)) {
-                    subjects += " " + checkedListBox1->Items[i]->ToString() + "\r\n";
+                    subjects += "• " + checkedListBox1->Items[i]->ToString() + "\r\n";
                     hasSelected = true;
                 }
             }
 
             if (!hasSelected) {
-                subjects += "Æîäåí ïðåäìåò íå âèáðàíî!";
+                subjects += "Жоден предмет не вибрано!";
             }
 
             textBox3->Text = subjects;
 
-            // Îíîâëþºìî listBox1
+            // Оновлюємо listBox1
             listBox1->Items->Clear();
             for (int i = 0; i < checkedListBox1->Items->Count; i++) {
                 if (checkedListBox1->GetItemChecked(i)) {
@@ -438,25 +438,25 @@ namespace QuestionnaireProject {
             }
         }
 
-        // Îáðîáíèê ïîä³¿ äëÿ êíîïêè "Ïðî ìåíå"
+        // Обробник події для кнопки "Про мене"
         System::Void button2_Click(System::Object^ sender, System::EventArgs^ e) {
-            String^ aboutMe = "²íôîðìàö³ÿ ïðî ìåíå:\r\n";
-            aboutMe += "Ïð³çâèùå: " + (String::IsNullOrEmpty(textBox1->Text) ? "Íå âêàçàíî" : textBox1->Text) + "\r\n";
-            aboutMe += "²ì'ÿ: " + (String::IsNullOrEmpty(textBox2->Text) ? "Íå âêàçàíî" : textBox2->Text) + "\r\n";
-            aboutMe += "Äàòà íàðîäæåííÿ: " + (String::IsNullOrEmpty(maskedTextBox1->Text) ? "Íå âêàçàíî" : maskedTextBox1->Text) + "\r\n";
-            aboutMe += "Êðà¿íà: " + (comboBox1->SelectedItem == nullptr ? "Íå îáðàíî" : comboBox1->SelectedItem->ToString()) + "\r\n";
-            aboutMe += "Ñïåö³àëüí³ñòü: " + (comboBox4->SelectedItem == nullptr ? "Íå îáðàíî" : comboBox4->SelectedItem->ToString()) + "\r\n";
-            aboutMe += "Êóðñ: " + (comboBox2->SelectedItem == nullptr ? "Íå îáðàíî" : comboBox2->SelectedItem->ToString()) + "\r\n";
-            aboutMe += "Ãðóïà: " + (comboBox3->SelectedItem == nullptr ? "Íå îáðàíî" : comboBox3->SelectedItem->ToString()) + "\r\n";
+            String^ aboutMe = "Інформація про мене:\r\n";
+            aboutMe += "Прізвище: " + (String::IsNullOrEmpty(textBox1->Text) ? "Не вказано" : textBox1->Text) + "\r\n";
+            aboutMe += "Ім'я: " + (String::IsNullOrEmpty(textBox2->Text) ? "Не вказано" : textBox2->Text) + "\r\n";
+            aboutMe += "Дата народження: " + (String::IsNullOrEmpty(maskedTextBox1->Text) ? "Не вказано" : maskedTextBox1->Text) + "\r\n";
+            aboutMe += "Країна: " + (comboBox1->SelectedItem == nullptr ? "Не обрано" : comboBox1->SelectedItem->ToString()) + "\r\n";
+            aboutMe += "Спеціальність: " + (comboBox4->SelectedItem == nullptr ? "Не обрано" : comboBox4->SelectedItem->ToString()) + "\r\n";
+            aboutMe += "Курс: " + (comboBox2->SelectedItem == nullptr ? "Не обрано" : comboBox2->SelectedItem->ToString()) + "\r\n";
+            aboutMe += "Група: " + (comboBox3->SelectedItem == nullptr ? "Не обрано" : comboBox3->SelectedItem->ToString()) + "\r\n";
 
             textBox4->Text = aboutMe;
         }
 
-        // Îáðîáíèê ïîä³¿ äëÿ listBox1
+        // Обробник події для listBox1
         System::Void listBox1_SelectedIndexChanged(System::Object^ sender, System::EventArgs^ e) {
             if (listBox1->SelectedItem != nullptr) {
                 String^ selectedSubject = listBox1->SelectedItem->ToString();
-                MessageBox::Show("Îáðàíèé ïðåäìåò: " + selectedSubject, "²íôîðìàö³ÿ ïðî ïðåäìåò");
+                MessageBox::Show("Обраний предмет: " + selectedSubject, "Інформація про предмет");
             }
         }
     };
